@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">2048</h1>
+		<div class="scores-container">
+			<div class="score-container"><p id="score">SCORE<br>0</p></div>
+			<div class="best-container"><p id="best"></p></div>
+		</div>
+		<div class="above-game">
+			<a id="restart" href="index.html">Nouvelle Partie</a>
+			<p class="game-intro">Assemblez les nombres et <br/>obtenez <strong>la case 2048 !</strong></p>
+		</div>
+		<div id="canvas-block">
+			<div class="container text-center" id="2048">
+			</div>
+			<script src="js/jquery.js"></script>
+			<script src="js/script.js"></script>
+			<script>
+				$(document).ready(function () {
+					$("#2048").init2048();
+				});
+			</script>
+		</div>
+		<div id="fleches">
+			<p id='gauche'>←</p>
+			<p id='haut'>↑</p>
+			<p id='bas'>↓</p>
+			<p id='droite'>→</p>
+		</div>
+	</div>
+</body>
+</html>
